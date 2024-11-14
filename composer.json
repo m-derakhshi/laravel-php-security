@@ -1,0 +1,22 @@
+{
+  "name": "m-derakhshi/laravel-php-security",
+  "description": "A package for checking PHP security settings in Laravel",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "MDerakhshi\\SecurityCheck\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelPHPSecurityServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "laravel/framework": "*"
+  }
+}
