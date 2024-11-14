@@ -3,6 +3,7 @@
 This package helps you quickly assess and improve the security settings of your PHP environment within a Laravel application. It checks essential security configurations and provides recommendations to enhance security by adjusting your `php.ini` file.
 
 ![Security Check Example](docs/example.png)
+![recommended way to fix](docs/recommended.png)
 
 ## Installation
 
