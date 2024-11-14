@@ -17,7 +17,7 @@ composer require m-derakhshi/laravel-php-security
 To customize the view template, publish the package views:
 
 ```bash
-php artisan vendor:publish --tag=views --provider="MDerakhshi\SecurityCheck\ServiceProvider"
+php artisan vendor:publish --tag=views --provider="MDerakhshi\SecurityCheck\LaravelPHPSecurityServiceProvider"
 ```
 
 ## Usage
@@ -38,14 +38,14 @@ Route::get('/security-check', [SecurityCheckController::class, 'index']);
 
 namespace App\Http\Controllers;
 
-use MDerakhshi\SecurityCheck\SecurityCheck;
+use MDerakhshi\SecurityCheck\LaravelPHPSecurityCheck;
 
 class SecurityCheckController extends Controller
 {
-    public function index(SecurityCheck $securityCheck)
+    public function index(LaravelPHPSecurityCheck $securityCheck)
     {
         $result = $securityCheck->checkSettings();
-        return view('security-check::security-check', $result);
+        return view('laravel-php-security-check::laravel-php-security-check', $result);
     }
 }
 ```
@@ -62,7 +62,7 @@ Visit `/security-check` in your Laravel application to view the PHP security set
 
 ## Customization
 
-After publishing, the view files are located in `resources/views/vendor/security-check/` and can be modified to adjust the display as needed.
+After publishing, the view files are located in `resources/views/vendor/laravel-php-security-check/` and can be modified to adjust the display as needed.
 
 ## License
 

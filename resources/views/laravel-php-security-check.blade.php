@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Security Check</title>
+    <title>Laravel PHP Security Check</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container my-4">
-    <h2 class="text-center mb-4">PHP Security Check</h2>
+    <h2 class="text-center mb-4">Laravel PHP Security Check</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
         {!! $output !!}
     </div>
